@@ -1,5 +1,5 @@
 #root {
-  margin: 0 ;
+  margin: 0;
   text-align: center;
   position: fixed;
   top: 0;
@@ -11,48 +11,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 @keyframes gradientAnimation {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
-
-.icono{
+.icono {
   margin: 15px;
   border: 1px solid black;
   padding: 10px;
   border-radius: 100%;
 }
 
-main{
+main {
   background-color: white;
   width: 500px;
-  height: 600px;
+  height: 610px;
   border-radius: 5%;
   color: black;
   padding: 10px;
-  
 }
 
-main p{
+main p {
   font-size: 1.2rem;
 }
 
-.btn-input-width{
+.btn-input-width {
   width: 447px;
   height: 43px;
 }
 
-.alerta-css{
-margin: 15px;
+.alerta-css {
+  margin: 15px;
+}
+
+.select-cont {
+  width: 450px;
+  margin: 0 auto;
+
 }

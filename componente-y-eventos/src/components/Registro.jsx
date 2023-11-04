@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import SocialButton from './SocialButton';
-import Alert from './Alert';
-import Formulario from './Formulario';
+import React, { useState } from "react";
+import SocialButton from "./SocialButton";
+import Alert from "./Alert";
+import Formulario from "./Formulario";
 
 function Registro() {
   const [error, setError] = useState({
@@ -13,8 +13,8 @@ function Registro() {
   const [registroExitoso, setRegistroExitoso] = useState(false);
 
   return (
-    <main className='background'>
-      <h1>Crea una Cuenta</h1>
+    <main className="background">
+      <h1 className="my-2">Crea una Cuenta</h1>
       <SocialButton facebook={"facebook"} />
       <SocialButton github={"github"} />
       <SocialButton linkedin={"linkedin"} />
