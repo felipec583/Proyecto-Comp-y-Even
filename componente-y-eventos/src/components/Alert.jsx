@@ -1,21 +1,15 @@
-import React from 'react';
+import React from "react";
+import Swal from "sweetalert2";
 
 const Alert = ({ error, registroExitoso }) => {
-  return (
-    <section>
-      {error.error && (
-        <div className={`alerta-css alert alert-${error.color}`} role="alert">
-          {error.mensaje}
-        </div>
-      )}
-
-      {registroExitoso && (
-        <div className="alerta-css alert alert-success" role="alert">
-          Se creó con éxito
-        </div>
-      )}
-    </section>
-  );
-}
+  {
+    {
+      error.error && Swal.fire("Error", `${error.mensaje}`, `${error.color}`);
+    }
+    {
+      registroExitoso && Swal.fire("Éxito", `Se creó con éxito`, `success`);
+    }
+  }
+};
 
 export default Alert;

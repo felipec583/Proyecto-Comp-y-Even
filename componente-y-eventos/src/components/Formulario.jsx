@@ -31,7 +31,7 @@ const Formulario = ({ setError, setRegistroExitoso }) => {
       setError({
         error: true,
         mensaje: "Completa los campos",
-        color: "danger",
+        color: "error",
       });
       setRegistroExitoso(false);
 
@@ -39,14 +39,14 @@ const Formulario = ({ setError, setRegistroExitoso }) => {
         setError({
           error: false,
           mensaje: "",
-          color: "danger",
+          color: "error",
         });
       }, 2000);
     } else if (validatePassword) {
       setError({
         error: true,
         mensaje: "Las contraseñas no coinciden",
-        color: "danger",
+        color: "error",
       });
       setRegistroExitoso(false);
 
@@ -54,14 +54,14 @@ const Formulario = ({ setError, setRegistroExitoso }) => {
         setError({
           error: false,
           mensaje: "",
-          color: "danger",
+          color: "error",
         });
       }, 2000);
     } else if (!regexPassword.test(password)) {
       setError({
         error: true,
         mensaje: passwordRequirements,
-        color: "danger",
+        color: "error",
       });
       setRegistroExitoso(false);
 
@@ -69,7 +69,7 @@ const Formulario = ({ setError, setRegistroExitoso }) => {
         setError({
           error: false,
           mensaje: "",
-          color: "danger",
+          color: "error",
         });
       }, 2000);
     } else {
