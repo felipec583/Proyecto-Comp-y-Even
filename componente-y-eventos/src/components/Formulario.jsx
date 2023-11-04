@@ -97,7 +97,6 @@ const Formulario = ({ setError, setRegistroExitoso }) => {
       isGenderSelected: e.target.value !== "choice",
     };
     setGenderSelection(updatedGenderSelection);
-    console.log(updatedGenderSelection);
   };
 
   const handleChange = (e) => {
